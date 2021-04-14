@@ -1,13 +1,64 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(53, 53, 53);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gameBoard {
+  height: 50vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.squareContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(27, 27, 27);
+}
+.square {
+  border-radius: 10%;
+  width: 95%;
+  height: 95%;
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.squareNoHover {
+  border-radius: 10%;
+  width: 95%;
+  height: 95%;
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.square:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.clicked {
+  background-color: rgb(94, 94, 94);
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
