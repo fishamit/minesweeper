@@ -27,11 +27,18 @@ export default function Square({
     width: "50%",
     height: "50%",
   };
+
   return (
     <div className="squareContainer" style={sizeStyle}>
       <div
         style={txtColor[square.n]}
-        className={square.clicked ? "squareNoHover clicked" : "square"}
+        className={
+          square.clicked
+            ? square.n > 0
+              ? "squareNoHoverNumber"
+              : "squareNoHover clicked"
+            : "square"
+        }
         onClick={() => {
           if (!square.flagged) handleClick(square.id);
         }}

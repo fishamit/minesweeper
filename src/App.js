@@ -53,6 +53,17 @@ export default function App() {
         }
       }
     }
+    let gameOverCheck = 0;
+    tmp.forEach(row =>
+      row.forEach(square => {
+        if (square.mine === true && square.flagged === false) {
+          gameOverCheck++;
+        }
+      })
+    );
+    if (gameOverCheck === 0) {
+      setGameOver(true);
+    }
     setArrBoard(tmp);
   };
 

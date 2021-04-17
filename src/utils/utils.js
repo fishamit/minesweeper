@@ -5,7 +5,7 @@ export const createGameBoard = size => {
     tmp[i] = new Array();
     for (let j = 0; j < size; j++) {
       tmp[i].push({
-        mine: Math.random() > 0.1 ? false : true,
+        mine: Math.random() > 0.12 ? false : true,
         id,
         n: 0,
         clicked: false,
