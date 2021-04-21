@@ -79,7 +79,7 @@ export default function App() {
     }
   }, [gameOver]);
   return (
-    <div className="app">
+    <div className="app" onContextMenu={e => e.preventDefault()}>
       <Board
         arrBoard={arrBoard}
         boardSize={boardSize}
