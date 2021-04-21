@@ -1,4 +1,4 @@
 # Minesweeper
-A quick implementation of minesweeper in React
+A quick & incomplete implementation of minesweeper in React
 
 
